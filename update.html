@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style> 
+            #dashboard{
+                width:55%;
+                height: 100px;;
+               border-bottom-style:inset;
+                margin-left: 300px;
+                margin-top: 250px;
+                background-image: url(ait.jpg)
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-color: aliceblue;
+                   
+                            }
+            #dashboard h1{
+                color:black;
+                font-size: 50px;
+                text-align: center;
+            }
+            form{
+                margin-top: 10px;
+            }
+    
+            select{
+                float:inherit;
+            }
+                
+    
+        </style>    
+    
+    </head>
+<body>
+     
+         
+         
+         
+         
+    <div id="dashboard">
+    <form action="update.php" method="post">
+           <label>DEPARTMENT:</label>
+    <select name="department">
+    <option value="select">SELECT</option>
+        <option value="cse">COMPUTER SCIENCE AND ENGINEERING</option>
+        <option value="me" >MECHANICAL ENGINEERING</option>
+        <option value="ece">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+    
+    </select>
+                &nbsp &nbsp &nbsp &nbsp &nbsp;
+              <label>SEMESTER:</label>
+          
+              <select name="semester">
+        
+                <option value="sem" checked>SEMESTER</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+        
+        
+        </select>
+        
+        <br><br>
+         &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp;
+        
+                 
+        
+        <label>DATE:</label>
+        <input type="date" name="dte">
+         &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp;
+        
+                   <input type="submit" value="update">
+               &nbsp  &nbsp;
+        <input type="reset">
+        
+        
+         
+        </form>
+        </div>
+   
+   </body>
+
+
+
+</html>
